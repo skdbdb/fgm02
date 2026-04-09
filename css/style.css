@@ -1,0 +1,130 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #333;
+}
+
+
+
+.header {
+    height: 120px;
+}
+
+.header .hd_wrap {
+    display: flex;
+
+
+    max-width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+
+
+
+
+.main_visual {
+    position: relative;
+    height: calc(100vh - 120px);
+    overflow: hidden;
+}
+
+.main_visual::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.main_visual::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(../images/main_visual01.jpg) no-repeat center center/cover;
+    filter: blur(3px);
+    z-index: 0;
+}
+
+
+.main_visual .slg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.main_visual .slg h2 {
+    font-size: 56px;
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+}
+
+.main_visual .slg p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+
+    margin-top: 40px;
+}
+
+.main_inpo {
+    padding: 96px 0;
+}
+
+.main_inpo .title {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main_inpo .title h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.main_inpo .title p {
+    font-size: 16px;
+    font-weight: 400;
+
+    margin-top: 16px;
+}
+
+.main_inpo .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+
+    margin-top: 40px;
+}
+
+
+
+
+.footer {
+    background: #f9f9f9;
+    padding: 80px 0;
+}
+
+.footer .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-style: normal;
+}
+
+.footer .inner strong {
+    display: block;
+    font-weight: 400;
+    margin-top: 8px;
+}
